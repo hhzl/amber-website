@@ -12,17 +12,12 @@ require.config({
     "bootstrap2.3.2": "bower_components/bootstrap2.3.2/bootstrap",
     "mousetrap": "bower_components/mousetrap/mousetrap",
     "jquery.blockUI": "bower_components/blockui/jquery.blockUI",
-    "require-css": "bower_components/require-css",
-    "amber_lib/es5-shim": "bower_components/es5-shim",
     "amber-trysmalltalk": "bower_components/trysmalltalk/src",
     "helios": "bower_components/helios/src",
     "helios/resources": "bower_components/helios/resources",
     "helios/index": "bower_components/helios/index",
     "amber-ide-starter-dialog": "bower_components/amber-ide-starter-dialog/lib/idestarter",
     "amber": "bower_components/amber/support",
-    "amber_vm": "bower_components/amber/support/deprecated-vm-files",
-    "amber_vm/_st": "bower_components/amber/support/deprecated-vm-files/as-receiver",
-    "amber_css": "bower_components/amber/support/resources",
     "amber_core": "bower_components/amber/src",
     "amber-trysmalltalkdemo": "src"
   },
@@ -33,13 +28,11 @@ require.config({
   "shim": {
     "jquery-ui": {
       "deps": [
-        "jquery",
         "jquery"
       ]
     },
     "codemirror/lib/codemirror": {
       "deps": [
-        "css!codemirror/lib/codemirror",
         "css!codemirror/lib/codemirror"
       ]
     },
@@ -51,11 +44,6 @@ require.config({
     },
     "ensure-console": {
       "exports": "console"
-    }
-  },
-  "map": {
-    "*": {
-      "css": "require-css/css"
     }
   }
 });
